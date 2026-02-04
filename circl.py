@@ -16,7 +16,7 @@ class AnimatedGraph(Scene):
         y_label = axes.get_y_axis_label("y")
 
         # Create a title for the graph
-        title = Text("Graph of $y = x^2$", font_size=24).to_edge(UP)
+        title = Tex("Graph of $y = x^2$", font_size=24).to_edge(UP)
 
         # Animate the creation of the graph
         self.play(Create(axes), Write(x_label), Write(y_label))
